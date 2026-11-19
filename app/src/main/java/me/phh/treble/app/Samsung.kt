@@ -97,6 +97,10 @@ class Samsung: EntryStartup {
                 val value = if(sp.getBoolean(key, false)) "true" else " false"
                 SystemProperties.set("persist.sys.phh.disable_back_mic", value)
             }
+            SamsungSettings.cscVersion -> {
+                val value = sp.getString(key, "")
+                SystemProperties.set("persist.sys.phh.samsung_csc_version", value)
+            }
         }
     }
 

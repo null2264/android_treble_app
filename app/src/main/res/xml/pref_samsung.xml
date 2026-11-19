@@ -68,5 +68,11 @@
             android:key="key_samsung_backlight_multiplier"
             android:title="Set backlight scale/max backlight level"
             android:inputType="number" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="key_samsung_csc_version"
+            android:title="Set CSC version"
+            android:summary="Potentially fix long boot time for some A-series phones"
+            android:inputType="text" />
     </PreferenceCategory>
 </PreferenceScreen>
