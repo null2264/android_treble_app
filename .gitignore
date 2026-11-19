@@ -18,3 +18,5 @@ TrebleApp.apk
 /sdk/platform-tools/
 /sdk/platforms/
 /sdk/build-tools/
+
+/keys/platform.jks

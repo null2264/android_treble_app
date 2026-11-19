@@ -19,4 +19,4 @@ if [ "$1" == "release" ];then
     file=app-release-unsigned
 fi
 ./gradlew $gradleTarget
-LD_LIBRARY_PATH=./signapk/ java -jar signapk/signapk.jar keys/platform.x509.pem keys/platform.pk8 ./app/build/outputs/apk/$target/${file}.apk TrebleApp.apk
+[ ! -f "./keys/platform.jks" ] && LD_LIBRARY_PATH=./signapk/ java -jar signapk/signapk.jar keys/platform.x509.pem keys/platform.pk8 ./app/build/outputs/apk/$target/${file}.apk TrebleApp.apk
